@@ -1,0 +1,34 @@
+body {
+  margin: 20px auto;
+}
+
+th.sorted[data-order="1"],
+th.sorted[data-order="-1"] {
+  position: relative;
+}
+
+th.sorted[data-order="1"]::after,
+th.sorted[data-order="-1"]::after {
+  right: 8px;
+  position: absolute;
+}
+
+th.sorted[data-order="-1"]::after {
+content: "▼"
+}
+
+th.sorted[data-order="1"]::after {
+content: "▲"
+}
+
+.pag_item {
+  margin: auto 3px;
+}
+
+.pag_item.active {
+  border-color: black;
+}
+
+.danger {
+  color: red;
+}
